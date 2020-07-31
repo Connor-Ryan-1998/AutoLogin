@@ -1,0 +1,13 @@
+C:\Users\user\Desktop\C#Testing\bin\Debug\netcoreapp3.1\C#Testing.exe
+C:\Users\user\Desktop\C#Testing\bin\Debug\netcoreapp3.1\C#Testing.deps.json
+C:\Users\user\Desktop\C#Testing\bin\Debug\netcoreapp3.1\C#Testing.runtimeconfig.json
+C:\Users\user\Desktop\C#Testing\bin\Debug\netcoreapp3.1\C#Testing.runtimeconfig.dev.json
+C:\Users\user\Desktop\C#Testing\bin\Debug\netcoreapp3.1\C#Testing.dll
+C:\Users\user\Desktop\C#Testing\bin\Debug\netcoreapp3.1\C#Testing.pdb
+C:\Users\user\Desktop\C#Testing\obj\Debug\netcoreapp3.1\C#Testing.csprojAssemblyReference.cache
+C:\Users\user\Desktop\C#Testing\obj\Debug\netcoreapp3.1\C#Testing.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\C#Testing\obj\Debug\netcoreapp3.1\C#Testing.AssemblyInfo.cs
+C:\Users\user\Desktop\C#Testing\obj\Debug\netcoreapp3.1\C#Testing.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\C#Testing\obj\Debug\netcoreapp3.1\C#Testing.dll
+C:\Users\user\Desktop\C#Testing\obj\Debug\netcoreapp3.1\C#Testing.pdb
+C:\Users\user\Desktop\C#Testing\obj\Debug\netcoreapp3.1\C#Testing.genruntimeconfig.cache
