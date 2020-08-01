@@ -71,42 +71,44 @@ namespace C_Testing
         static void readConfig()
         {
             string fileName = @".\config.txt";
-            using (StreamReader sr = File.OpenText(fileName))
+            if (File.Exists(fileName))
             {
-                string configuration = "";
-                string autoLaunch = "";
-                string vpn = "";
-                string workStation = "";
-
-                while ((configuration = sr.ReadLine()) != null)
+                using (StreamReader sr = File.OpenText(fileName))
                 {
-                    string[] split = configuration.Split(";");
-                    foreach (var word in split)
+                    string configuration = "";
+                    string autoLaunch = "";
+                    string vpn = "";
+                    string workStation = "";
+
+                    while ((configuration = sr.ReadLine()) != null)
                     {
-                        if (word.Contains("Config"))
+                        string[] split = configuration.Split(";");
+                        foreach (var word in split)
                         {
-                            autoLaunch = word.Substring(word.IndexOf(":") + 1);
-                        }
-                        if (word.Contains("VPN"))
-                        {
-                            vpn = word.Substring(word.IndexOf(":") + 1);
-                        }
-                        if (word.Contains("Workstation"))
-                        {
-                            workStation = word.Substring(word.IndexOf(":") + 1);
-                            Console.WriteLine(vpn);
+                            if (word.Contains("Config"))
+                            {
+                                autoLaunch = word.Substring(word.IndexOf(":") + 1);
+                            }
+                            if (word.Contains("VPN"))
+                            {
+                                vpn = word.Substring(word.IndexOf(":") + 1);
+                            }
+                            if (word.Contains("Workstation"))
+                            {
+                                workStation = word.Substring(word.IndexOf(":") + 1);
+                            }
                         }
                     }
-                }
-                if (autoLaunch == "Y")
-                {
-                    ProcessStartInfo startInfo = new ProcessStartInfo();
-                    startInfo.FileName = "rasdial.exe";
-                    startInfo.Arguments = "\"" + vpn + "\"";
-                    Process.Start(startInfo);
-                    Task.Delay(3000).Wait();
-                    System.Diagnostics.Process.Start("mstsc", "/v:" + "\"" + workStation + "\"");
-                    System.Environment.Exit(1);
+                    if (autoLaunch == "Y")
+                    {
+                        ProcessStartInfo startInfo = new ProcessStartInfo();
+                        startInfo.FileName = "rasdial.exe";
+                        startInfo.Arguments = "\"" + vpn + "\"";
+                        Process.Start(startInfo);
+                        Task.Delay(3000).Wait();
+                        System.Diagnostics.Process.Start("mstsc", "/v:" + "\"" + workStation + "\"");
+                        System.Environment.Exit(1);
+                    }
                 }
             }
         }
