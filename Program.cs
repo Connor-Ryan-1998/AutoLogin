@@ -25,12 +25,12 @@ namespace C_Testing
         {
             if (String.IsNullOrEmpty(Workstation))
             {
-                Workstation = "INTOV8WS64";
+                Workstation = "Empty";
             }
 
             if (String.IsNullOrEmpty(VPN))
             {
-                VPN = "Intov8 BNE";
+                VPN = "Empty";
             }
             ProcessStartInfo startInfo = new ProcessStartInfo();
             startInfo.FileName = "rasdial.exe";
