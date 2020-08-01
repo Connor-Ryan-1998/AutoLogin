@@ -4,7 +4,13 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>C_Testing</RootNamespace>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishReadyToRun>true</PublishReadyToRun>
     <ApplicationIcon>.\resources\icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <ItemGroup>
+    <TrimmerRootAssembly Include="System.IO.FileSystem" />
+  </ItemGroup>
+  
 
 </Project>
