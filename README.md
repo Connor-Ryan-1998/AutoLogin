@@ -3,8 +3,8 @@
 AutoLogin CLI for automated VPN conneciton and login via RDP
 Tool to run. Compile into .exe to run more consistently.
 
-###To test
----
+### Execute
+
 ```
 dotnet run program.cs
 ```
